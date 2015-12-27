@@ -5,6 +5,6 @@ test:
   server: "http://localhost:9292/faye"
   secret_token: "secret"
 production:
-  server: "http://letsfaye.herokuapp.com/faye"
+  server: "http://letsjam-chat-server.herokuapp.com/faye"
   secret_token: "1d898ad94fdf2b4d0b6224745d1fbae9f0af754f1c18bc725229ed0183ff47b40e6adf7f9f0c7ebbbbfd795b923ac90ddb3522457ce09ae218420fdf8718c7ee"
   signature_expiration: 86400 # one day
