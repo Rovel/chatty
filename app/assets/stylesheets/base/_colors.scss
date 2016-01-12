@@ -1,0 +1,128 @@
+$brand-pink       : #E0224F;
+$brand-blue       : #20253D;
+$brand-lightblue  : #3381c3;
+$brand-green      : #62BE6E;
+$brand-yellow     : #F59F0E;
+$brand-gray       : #666666;
+$brand-gray-dark  : #333333;
+$brand-gray-light : #B8B8B8;
+
+//=============== Timeline
+
+$timeline-bg       : #fff;
+$timeline-color    : #666;
+
+//=============== Music style colors
+
+$style-rock         : #E0224F;
+$style-religious    : #BDC3C7;
+$style-children     : #F6ACBC;
+$style-blues        : #E05822;
+$style-country      : #22E0D5;
+$style-metal        : #6C2690;
+$style-hardcore     : #1F3B5E;
+$style-jazz         : #E0DE22;
+$style-eletronic    : #D3D499;
+$style-african      : #6EE022;
+$style-classical      : #228DE0;
+$style-hiphop       : #FFBA40;
+$style-latin        : #E400FF;
+$style-reb          : #CC7414;
+$style-reggae       : #14CCAA;
+$style-pop          : #FF40AA;
+$style-instrumental : #719978;
+$style-brazilian    : #5C9941;
+
+//=============== Badge background colors
+
+$medium-red   : #f05050;
+$light-blue   : #3c5f7d;
+$medium-green : #4dbd74;
+
+//=============== Flash messages colors
+
+.white{
+  background: white;
+}
+
+.rock {
+  background: $style-rock;
+}
+.religious {
+  background: $style-religious;
+}
+.children {
+  background: $style-children;
+}
+.blues {
+  background: $style-blues;
+}
+
+.country {
+  background: $style-country;
+}
+
+.metal {
+  background: $style-metal;
+}
+
+.hardcore {
+  background: $style-hardcore;
+}
+
+.jazz {
+  background: $style-jazz;
+}
+
+.eletronic {
+  background: $style-eletronic;
+}
+
+.african {
+  background: $style-african;
+}
+
+.classical {
+  background: $style-classical;
+}
+
+.hip_hop {
+  background: $style-hiphop;
+}
+
+.latina {
+  background: $style-latin;
+}
+
+.reb {
+  background: $style-reb;
+}
+
+.reggae {
+  background: $style-reggae;
+}
+
+.pop {
+  background: $style-pop;
+}
+
+.religious {
+ background: $style-religious;
+}
+
+.children {
+  background: $style-children;
+}
+
+.instrumental {
+  background: $style-instrumental;
+}
+
+.brazilian {
+  background: $style-brazilian;
+}
+
+.ability {
+  background: $brand-blue;
+}
+

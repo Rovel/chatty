@@ -910,7 +910,7 @@ textarea {
     line-height: inherit;
 }
 a {
-    color: #428bca;
+    color: #E0224F;
     text-decoration: none;
 }
 a:hover,
@@ -4188,7 +4188,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
     color: #ccc;
 }
 .navbar-inverse {
-    background-color: #222;
+    background-color: #cbcbcb;
     border-color: #080808;
 }
 .navbar-inverse .navbar-brand {

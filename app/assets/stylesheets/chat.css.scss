@@ -3,7 +3,7 @@
  * CREDITS: http://css-tricks.com/replicating-google-hangouts-chat/
  *
  */
-
+@import 'base/colors';
 .chatbox {
     position: fixed;
     position: expression("absolute");
@@ -12,13 +12,21 @@
 }
 
 .chatboxhead {
-    background: #E0224F;
+    background: $brand-pink;
     color: white;
     padding: 0.5rem;
     overflow: hidden;
 
     border-right: 1px solid rgba(85, 85, 85, 0.87);
     border-left: 1px solid rgba(85, 85, 85, 0.87);
+}
+
+.chatboxhead::before {
+  animation: pulse 1s ease alternate infinite;
+}
+@keyframes pulse {
+  from { opacity: 0; }
+  to { opacity: 0.5; }
 }
 
 .chatboxhead h1 {

@@ -1,8 +1,59 @@
 // Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import 'base/colors';
+
 body {
   padding-top: 70px;
+}
+
+.logo {
+  width: 100%;
+  display: inline-block;
+  position: relative;
+
+  @media screen and (max-width: 320px) {
+    width: 160px;
+    top: 0px;
+  }
+
+  img {
+    width: 70%;
+    top: 0px;
+    position: relative;
+  }
+}
+
+.panel-footer{
+   position:fixed;
+   left:0px;
+   bottom:0px;
+   height:10%;
+   width:100%;
+}
+.footer-icons{
+  text-align: center;
+  ul {
+    list-style: none;
+  }
+
+  li {
+    display: inline-block;
+    width: 10%;
+
+  }
+}
+.footer-logo{
+  text-align: center;
+  ul {
+    list-style: none;
+  }
+
+  li {
+    display: inline-block;
+    width: 10%;
+
+  }
 }
 
 li.media {
@@ -15,6 +66,7 @@ li.media a {
   height: 100%;
   top: 0;
   left: 0;
+  color: $brand-pink;
   text-decoration: none; /* No underlines on the link */
   z-index: 10; /* Places the link above everything else in the div */
   background-color: #FFF; /* Fix to make div clickable in IE */

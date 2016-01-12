@@ -1,5 +1,5 @@
-.row
-  .col-md-4
+section.row
+  .col-xs-12.col-sm-12.col-md-8
     div[style="height: 300px; overflow-y: auto;"]
       .panel.panel-default
         .panel-heading
@@ -20,8 +20,12 @@
                 td
                   = user.name
                 td
-                  = link_to "Send Message", "#", class: "btn btn-success btn-xs start-conversation", "data-sid" => current_user.id, "data-rip" => user.id
+                  = link_to "", "#", class: "i fa fa-comments start-conversation", "data-sid" => current_user.id, "data-rip" => user.id
+                td
+                  = link_to "", "#", class: "i fa fa-envelope start-conversation", "data-sid" => current_user.id, "data-rip" => user.id
     hr
+section.container
+  .col-xs-12.col-sm-12.col-md-8
     h3
       | Your Conversations
     div[style="height: 400px; overflow-y: auto;"]

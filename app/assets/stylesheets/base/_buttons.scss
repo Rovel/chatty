@@ -1,0 +1,203 @@
+@import 'base/colors';
+.btn {
+  border-radius: 3px;
+  // text-transform: capitalize;
+  font-weight: bold;
+  border: 0;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  &:hover {
+    background: $brand-gray-dark;
+  }
+}
+
+a.btn {
+  display: block;
+  padding: 5px 25px;
+  text-align: center;
+
+  &:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+@media screen and (max-width: 320px) {
+  a.btn {
+    padding: 5px 15px;
+  }
+}
+
+.btn-a {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 38px;
+
+  &:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+.btn--pink {
+  @extend .btn;
+  background: $brand-pink;
+  color: #fff;
+
+  &:hover {
+    background: darken($brand-pink, 15%);
+  }
+}
+
+.btn--green {
+  @extend .btn;
+  background: $brand-green;
+  color: #fff;
+
+  &:hover {
+    background: darken($brand-green, 15%);
+  }
+}
+
+.btn--blue {
+  @extend .btn;
+  background: $brand-lightblue;
+  color: #fff;
+
+  &:hover {
+    background: darken($brand-lightblue, 15%);
+  }
+}
+
+.btn--gray {
+  @extend .btn;
+  background: $brand-gray;
+  color: #fff;
+}
+
+.btn--white {
+  @extend .btn;
+  background: #fff;
+  color: $brand-pink;
+
+  &:hover {
+    background: $brand-pink;
+    color: #fff;
+  }
+}
+
+.btn--transparent {
+  @extend .btn;
+  background: rgba(255, 255, 255, .4);
+  &:hover {
+    background: rgba(0, 0, 0, .4);
+  }
+}
+
+.btn--sm {
+  font-size: 12px;
+  padding: 4px !important;
+  float: left;
+  margin-right: 8px;
+}
+
+.btn--md {
+  height: 50px;
+}
+
+.btn--md__lg {
+  @extend .btn--md;
+  width: 100%;
+}
+
+.btn--bg {
+  height: 50px;
+}
+
+.btn--back {
+  height: 50px;
+  padding-left: 25px;
+  padding-right: 25px;
+  background-image: asset-url('arrow--lg.png');
+  background-color: #fff;
+  background-position: 19px 15px;
+  background-repeat: no-repeat;
+  background-size: 11px 20px;
+  float: left;
+  margin-right: 10px;
+  @media
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (   min--moz-device-pixel-ratio: 2),
+  only screen and (     -o-min-device-pixel-ratio: 2/1),
+  only screen and (        min-device-pixel-ratio: 2),
+  only screen and (                min-resolution: 192dpi),
+  only screen and (                min-resolution: 2dppx) {
+    background-image: asset-url('arrow--lg@2x.png');
+    background-repeat: no-repeat;
+    background-size: 11px 20px;
+  }
+
+  &:hover {
+    background-image: asset-url('arrow--lg__hover.png');
+    background-color: $brand-pink;
+    background-position: 19px 15px;
+    background-repeat: no-repeat;
+    background-size: 11px 20px;
+    @media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (   min--moz-device-pixel-ratio: 2),
+    only screen and (     -o-min-device-pixel-ratio: 2/1),
+    only screen and (        min-device-pixel-ratio: 2),
+    only screen and (                min-resolution: 192dpi),
+    only screen and (                min-resolution: 2dppx) {
+      background-image: asset-url('arrow--lg__hover@2x.png');
+      background-repeat: no-repeat;
+      background-size: 11px 20px;
+    }
+  }
+}
+
+.btn--80 {
+  height: 50px;
+}
+
+.btn-facebook-share {
+  margin-top: 40px;
+  margin-bottom: -15px;
+
+  .fb_iframe_widget {
+    max-width: 280px;
+  }
+}
+
+.btn-facebook {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-image: asset-url('btn-facebook.png');
+  background-repeat: no-repeat;
+}
+
+.slick-next {
+  background-image: asset-url('arrow__next.png');
+  height: 85px;
+  width: 35px;
+  top: 34%;
+  right: -35px;
+  &:before {
+    content: none;
+  }
+  &:hover { background-image: asset-url('arrow__next__hover.png') !important; }
+}
+.slick-prev {
+  @extend .slick-next;
+  transform: rotate(180deg);
+  &:before {
+    content: none;
+  }
+  &:hover {
+    background-image: asset-url('arrow__next__hover.png')
+  }
+}
+
